@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+
+</head>
+<body>
+    <h1>Sistema De Imigração Do Brasil</h1>
+    Pais de origem <input type="text" name="txt01" id="txt01">
+    <input type="button" value="Verificar" onclick="origem()">
+    <div id = texto>
+
+    </div>
+    <script>
+        
+        function origem(){
+            var txtp = window.document.getElementById('txt01')
+            var pais = String(txtp.value)
+            var texto = window.document.querySelector('div#texto')
+            texto.innerHTML = `<p>Seu pais de origem é ${pais}</p>`
+            if(pais == 'Brasil'){
+                texto.innerHTML += `<p>Opa Bem vindo de volta ao <strong> Brasil </strong> compatriota pode entrar no Pais </p>`
+            }
+            else{
+                texto.innerHTML += `Sinto muito não permitimos a entrada de pessoas do ${pais}`
+            }
+            texto.innerHTML += '<p>Obrigado e volte sempre</p>'
+        }
+
+
+
+    </script>
+
+    
+</body>
+</html>
