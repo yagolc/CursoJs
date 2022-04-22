@@ -1,0 +1,7 @@
+
+var vezes = 50
+
+while(vezes != 0){
+    console.log('tudo bem ?')
+    vezes - 1
+}
