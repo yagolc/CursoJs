@@ -20,6 +20,10 @@ function verificar(){
             }else if(idade == 21){
                 //yago
                 img.setAttribute('src', 'yago.png')
+                
+            }else if (idade == 22){
+                img.setAttribute('src', 'jaime.png')
+
             }else if(idade <= 21){
                 //jovem
                 img.setAttribute('src', 'jovem-m.png')
